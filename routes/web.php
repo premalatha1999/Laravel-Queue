@@ -19,12 +19,11 @@ Route::get('/', function () {
 });
 
 Route::get('sendmail', function () {
-    Mail::to('premalathacomp1999@gmail.com')->send(new Mailemail());
+    Mail::to('your email id')->send(new Mailemail());
     return "success";
 });
 
 Route::get('sendmailtouser', function () {
-    // $job = (new Mailjob())->delay(Carbon::now()->addSeconds(5));
      $job = (new Mailjob())
                     ->delay(Carbon::now()->addMinutes(1));
     dispatch($job);

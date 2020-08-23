@@ -31,6 +31,6 @@ class Mailjob implements ShouldQueue
      */
     public function handle()
     {
-        Mail::to('premalathacomp1999@gmail.com')->send(new Mailemail());
+        Mail::to('your mail id')->send(new Mailemail());
     }
 }
