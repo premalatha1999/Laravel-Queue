@@ -7,7 +7,7 @@
 git clone https://github.com/premalatha1999/Laravel-Queue.git
 cd Laravel-Queue
 composer update
-php artisan queue:work
+To run queue : php artisan queue:work
 ```
 
 ### Steps for implement queue
